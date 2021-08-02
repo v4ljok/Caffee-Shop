@@ -1,0 +1,457 @@
+/* Активация шрифта
+font-family: 'Josefin Sans Bold', arial;
+font-family: 'Alegreya Sans', arial;
+font-family: 'Josefin Sans', arial;
+font-family: 'Cedarville Cursive', cursive;
+font-family: "GeorgeRoundedRegular";
+*/
+
+/* Подключаю шрифт из папки */
+@font-face { 
+font-family: "GeorgeRoundedRegular"; 
+src: url("../fonts/GeorgeRoundedRegular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+
+/* Начало */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	max-width: 1440px; /* Максимальная ширина */
+	margin: auto; /* Выравнивание по центру */
+	background: linear-gradient(#FFFFFF 74.18165053%, rgba(45, 99, 94, 0.05) 25.81834947%);
+	background-size: 100% 2184px;
+	min-width: 1060px;
+}
+
+a {
+	text-decoration: none; /* Уберает подчеркивания и другую чушь*/
+}
+
+.menu {
+	list-style: none; /* Уберает точки в списке*/
+	display: flex; /* CSS Flexbox */
+	height: auto; /* Высота автоматом, как у содержимого */
+	width: 40.33333333%;
+	justify-content: space-between; /* CSS Flexbox */
+	margin-left: 4.75%;
+	margin-right: 4.75%;
+	margin-top: 50px;
+}
+
+.header {
+	max-width: 1200px; /* Максимальная ширина */
+	margin: auto; /* Выравнивание по центру */
+	height: 129px;
+	display: flex; /* Технология CSS Flexbox, все блоки выравнимаются по оси, в данном случае горизонтально (Растягивает картинки) */
+	min-width: 1000px;
+}
+
+.header a {
+	font-family: 'Josefin Sans Bold', arial;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.logo {
+	width: 56px;
+	height: 34.17px;
+	margin-right: 1.08333333333%;
+	margin-top: 39px;
+}
+
+.logo_text {
+	width: 167px;
+	height: 38px;
+	margin-right: 19.25%;
+	margin-top: 39px;
+}
+
+.menu a {
+	color: #000000;
+}
+
+.menu_btn {
+	width: 135px;
+	height: 43px;
+	background-color: #2D635E;
+	border-radius: 7px; /* Закругляет края */
+	display: flex;
+	align-items: center; /* Свойство align-items задает выравнивание элементов вдоль поперечной оси. */
+	justify-content: center; /* Выравнивает элементы по центру */
+	margin-top: 36px;
+	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu_btn {
+	color: #FFFFFF;
+}
+
+.site_content {
+	height: 2040px;
+	max-width: 1200px; /* Максимальная ширина */
+	margin: auto; /* Выравнивание по центру */
+	min-width: 1000px;
+}
+
+.preview {
+	height: 513px;
+	display: flex;
+}
+
+.phrase {
+	font-family: 'Cedarville Cursive', cursive;
+	color: #444A4A;
+	font-size: 28px;
+	line-height: 63px;
+	margin-top: 106px
+}
+
+h1 {
+	font-family: 'Josefin Sans Bold', arial;
+	font-size: 63px;
+	line-height: 63px;
+	color: #000000;
+	margin-top: 18px;
+	margin-bottom: 26px;
+}
+
+.order_button {
+	width: 235px;
+	height: 54px;
+	background-color: #2D635E;
+	display: flex;
+	align-items: center; /* Свойство align-items задает выравнивание элементов вдоль поперечной оси. */
+	justify-content: center; /* Выравнивает элементы по центру */
+	border-radius: 5px;
+	font-family: "GeorgeRoundedRegular";
+	font-size: 20px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+
+.block1 {
+	width: 46.58333333%;
+	height: 513px;
+}
+
+.block2 {
+	width: 159px;
+	height: 513px;
+}
+
+.cube {
+	background-color: rgba(227, 235, 231, 0.4);
+	width: 159px;
+	height: 157px;
+	display: flex;
+	align-items: center; /* Свойство align-items задает выравнивание элементов вдоль поперечной оси. */
+	justify-content: center; /* Выравнивает элементы по центру */
+	margin-top: 309px;
+}
+
+.block3 {
+	height: 513px;
+	width: 410px;
+	background-image: linear-gradient(to bottom, #E3EBE7 90.83820663%, #FFFFFF 9.161793372%); /* Градиент */
+}
+
+.block3 img {
+	margin: 140px 27px 0 39px;
+}
+
+.block4 {
+	height: 513px;
+	width: 72px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.text1 {
+	writing-mode: vertical-lr;
+	transform:rotate(180deg);
+	font-family: 'Josefin Sans Bold', arial;
+	font-size: 28px;
+	line-height: 28px;
+	color: #444A4A;
+	margin-right: 2px;
+}
+
+.invisible_block {
+	width: 32px;
+	height: 47px;
+}
+
+.block4 img {
+	height: 32px;
+	width: 32px;
+	float: right;
+}
+
+.imgblock {
+	margin-bottom: 14px;
+}
+
+.about_us {
+	height: 365px;
+	display: flex;
+	margin-top: 123px;
+}
+
+.block5 {
+	height: 365px;
+	width: 393px;
+}
+
+h2 {
+	font-size: 38px;
+	line-height: 38px;
+	color: #000000;
+	font-family: 'Josefin Sans Bold', arial;
+
+}
+
+h5 {
+	font-family: Alegreya Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 36px;
+	letter-spacing: 0.001em;
+	color: #444A4A;
+}
+
+.block6 h2, .block7 h2 {
+	margin-bottom: 25px;
+}
+
+.first {
+	margin-bottom: 15px;
+}
+
+h4 {
+	font-family: 'Cedarville Cursive', cursive;
+	font-size: 28px;
+	line-height: 53px;
+	writing-mode: vertical-lr;
+	transform:rotate(180deg);
+	color: rgba(0, 0, 0, 0.75);
+	font-style: normal;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: 'Josefin Sans Bold', arial;
+	font-size: 28px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.block6 {
+	width: 53.75%;
+	margin-left: 7.5%;
+	margin-right: 6%;
+}
+
+.promotion {
+	margin-top: 109px;
+	height: 320px;
+	display: flex;
+}
+
+.block7 {
+	width: 51.25%;
+	margin-right: 8.58333333333%;
+}
+
+.block8 {
+	height: 320px;
+	width: 410px;
+	margin-right: 6%;
+}
+
+.block7 .order_button {
+	margin-top: 24px;
+}
+
+.tiles  {
+	display: flex;
+	margin-top: 61px;
+	height: 550px;
+}
+
+.tile1, .tile2, .tile3 {
+	background: #FFFFFF;
+	box-shadow: 0px 23px 34px rgba(35, 57, 55, 0.17);
+	border-radius: 25px;
+	height: 458px;
+	margin-top: 48px;
+	width: 32.82%;
+}
+
+.tiles img {
+	width: 22px;
+	height: 38px;
+}
+
+.tiles a {
+	margin-top: 230px;
+	width: 22px;
+	height: 38px;
+}
+
+.tile2 {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.tiles .order_button {
+	margin: auto;
+}
+
+.tiles h5, .tiles h3 {
+	text-align: center
+}
+
+.tiles h5 {
+	margin-right: 17.6470588235%;
+	margin-left: 17.6470588235%;
+	margin-bottom: 9.38864628820%;
+}
+
+.tiles h3 {
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
+
+.tile3 {
+	margin-right: 2%;
+}
+
+.tile1 {
+	margin-left: 2%;
+}
+
+.contacts {
+	height: 482px;
+}
+
+.footer {
+	height: 39px;
+	text-align: center;
+	font-size: 19px;
+	line-height: 36px;
+	color: #444A4A;
+	letter-spacing: 0.001em;
+	font-family: Alegreya Sans;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.contacts {
+	display: flex;
+	margin-top: 130px;
+}
+
+.block9 {
+	width: 646px;
+	height: 350px;
+}
+
+.block9 img {
+	z-index: 1;
+	position: absolute;
+	margin-top: 25px;
+}
+
+.block9 h4 {
+	z-index: 2;
+	position: absolute;
+	margin-left: 610px;
+	margin-bottom: 350px;
+}
+
+.block10 img {
+	margin-left: 24px;
+	margin-top: 60px;
+	margin-right: 32px;
+}
+
+.block11 {
+	width: 240px;
+	height: 258px;
+	margin-top: 35px;
+}
+
+.top {
+	font-family: 'Josefin Sans Bold', arial;
+	font-size: 32px;
+	line-height: 45px;
+	color: #000000;
+	letter-spacing: 0.02em;
+}
+
+.block11 p {
+	font-family: Alegreya Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 36px;
+	letter-spacing: 0.001em;
+	color: #444A4A;
+	margin-bottom: 16px;
+}
+
+.q {
+	margin-top: 21px
+}
+
+.block5 .color {
+	width: 380px;
+	height: 287px;
+	background-color: #FAE9E0;
+	position: absolute;
+	z-index: 1;
+	margin-top: 23px;
+}
+
+.block5 h4 {
+	position: absolute;
+	z-index: 3;
+	width: 38px;
+}
+
+.block5 img {
+	margin-left: 28px;
+	margin-top: 78px;
+	position: absolute;
+	z-index: 2;
+}
+
+.block8 .color {
+	width: 410px;
+	height: 276px;
+	background-color: #E3EBE7;
+	position: absolute;
+	z-index: 1;
+	margin-top: 30px;
+}
+
+.block8 img {
+	position: absolute;
+	z-index: 2;
+	margin-left: 72px;
+}
+
+.block8 h4 {
+	position: absolute;
+	z-index: 3;
+	margin-left: 375px;
+}
+
